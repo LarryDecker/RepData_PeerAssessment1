@@ -1,3 +1,14 @@
+Reproducible Research Project 1
+====================================================================
+
+##Implementation of Assignment
+The PA1_template.Rmd file in the forked repo was modified with the necessary
+code to complete the assignment. It requires the activity.csv file from 
+the activity.zip file to be in the working directory.
+
+The rest of the original "readme" file from the assignment is below.
+
+
 ## Introduction
 
 It is now possible to collect a large amount of data about personal
