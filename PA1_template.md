@@ -14,7 +14,7 @@ library(tidyverse)
 ```
 
 ```
-## -- Attaching packages ------------------------------------------------------ tidyverse 1.2.1 --
+## -- Attaching packages ---------------------------------- tidyverse 1.2.1 --
 ```
 
 ```
@@ -25,7 +25,7 @@ library(tidyverse)
 ```
 
 ```
-## -- Conflicts --------------------------------------------------------- tidyverse_conflicts() --
+## -- Conflicts ------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ```
@@ -132,7 +132,7 @@ activityImputed$daytype<-ifelse(weekdays(as.Date(activityImputed$date))%in%c("Sa
 ### Make a panel plot of average number of steps taken per interval split by weekday and weekend.
 
 ```r
-dataForGraph<-activityImputed%>%group_by(daytype,interval)%>%summarise(avgSteps=sum(steps,na.rm=TRUE))
+dataForGraph<-activityImputed%>%group_by(daytype,interval)%>%summarise(avgSteps=mean(steps,na.rm=TRUE))
  xyplot(avgSteps~interval|daytype,data=dataForGraph,type="l",layout=c(1,2),main="Average Number of Steps per Interval by Day Type",ylab="Average Steps",xlab="Interval")
 ```
 
