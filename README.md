@@ -1,7 +1,7 @@
 Reproducible Research Project 1
 ====================================================================
 
-##Implementation of Assignment
+## Implementation of Assignment
 The PA1_template.Rmd file in the forked repo was modified with the necessary
 code to complete the assignment. It requires the activity.csv file from 
 the activity.zip file to be in the working directory.
